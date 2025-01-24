@@ -12,8 +12,8 @@ class SetupState(State):
 
         # Load existing values if available
         token, cookie, profile_url, last_saved = "", "", "", "Never"
-        if os.path.exists('resources/storage.txt'):
-            with open('resources/storage.txt', 'r') as f:
+        if os.path.exists(self.storage_path):
+            with open(self.storage_path, 'r') as f:
                 lines = f.readlines()
                 for line in lines:
                     if line.startswith("token="):
@@ -35,7 +35,7 @@ class SetupState(State):
 
         # Save new values only if they have changed
         if new_token != token or new_cookie != cookie or new_profile_url != profile_url:
-            with open('resources/storage.txt', 'w') as f:
+            with open(self.storage_path, 'w') as f:
                 f.write(f"token={new_token}\ncookie={new_cookie}\nprofile_url={new_profile_url}\nlast_saved={datetime.now()}\n")
             printRow(stdscr, "Values saved. Press Enter to return to menu...")
         else:

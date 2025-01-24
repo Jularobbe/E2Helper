@@ -11,7 +11,7 @@ class MenuState(State):
             nonlocal current_selection
             stdscr.clear()
             reset_row_counter()
-            with open('resources/banner.txt', 'r') as f:
+            with open(self.banner_path, 'r') as f:
                 banner = f.readlines()
             for line in banner:
                 printRow(stdscr, line)
