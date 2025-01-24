@@ -5,8 +5,8 @@ E2Helper is a simple command-line tool designed to assist users with their E2 ta
 ## Features
 
 - **Menu Navigation**: Navigate through different states like Test, Setup, About, and Quit.
-- **Setup State**: Configure and save settings like token, cookie, and profile URL.
-- **About State**: Learn more about the tool and its creator.
+- **Setup**: Configure and save settings like token, cookie, and profile URL.
+- **About**: Learn more about the tool and its creator.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ E2Helper is a simple command-line tool designed to assist users with their E2 ta
 
 1. Clone the repository:
     ```sh
-    git clone <repository-url>
+    git clone https://github.com/Jularobbe/E2Helper.git
     cd E2Helper
     ```
 
@@ -28,11 +28,10 @@ E2Helper is a simple command-line tool designed to assist users with their E2 ta
     python main.py
     ```
 
-2. Use the arrow keys to navigate through the menu and press Enter to select an option.
+2. Use the arrow keys to navigate through the menu and press Enter to select setup.
 
-## Project Structure
+3. Find your cookie, token and profile URL (on the website) and you're good to go! :)
 
-- [main.py](http://_vscodecontentref_/0): The main entry point of the application.
-- [resources](http://_vscodecontentref_/1): Directory containing resource files like [banner.txt](http://_vscodecontentref_/2) and [storage.txt](http://_vscodecontentref_/3).
-- [states](http://_vscodecontentref_/4): Directory containing different state classes and utilities.
-- [setup_project.sh](http://_vscodecontentref_/5): Script to set up the project structure.
+## Notice
+
+This project is not affiliated with, endorsed by, or in any way associated with Earth2 or any of its subsidiaries, affiliates, or related entities. All trademarks and copyrights are the property of their respective owners.
